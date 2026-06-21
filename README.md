@@ -24,7 +24,7 @@ The system is decoupled into four primary infrastructure pillars:
 ### 4. Security & Access Layer (IAM & Signed URLs)
 * **Role:** Multi-layered security and data protection.
 * **Service Accounts:** Cloud Run executes under a restricted **IAM (Identity and Access Management)** service account bound explicitly to the `roles/storage.objectAdmin` role, adhering strictly to the principle of least privilege.
-* **Presigned Assets:** To prevent exposing the storage bucket completely to the public internet, the application generates a cryptographic **V4 Signed URL** with a strict 64-bit signature and an automated expiration window (1 hour). The frontend can stream or download the audio asset directly through this link without needing a GCP login.
+
 
 ---
 
