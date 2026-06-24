@@ -6,7 +6,7 @@ from google.cloud import storage
 tts_client = texttospeech.TextToSpeechClient()
 storage_client = storage.Client()
 
-BUCKET_NAME = "tts-bucket-khalid"
+BUCKET_NAME = "bootcamp.khalidhashim.com"
 
 ALLOWED_ORIGIN = "https://bootcamp.khalidhashim.com"
 
