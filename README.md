@@ -21,9 +21,6 @@ The system is decoupled into four primary infrastructure pillars:
 * **Role:** Immutable object storage.
 * **How it works:** The synthesized audio byte stream is not stored locally on the volatile serverless container. Instead, it is instantly streamed to a globally unique storage bucket (`bootcamp.khalidhashim.com`) as an isolated blob named with a unique UUID string (`tts-[UUID].mp3`).
 
-### 4. Security & Access Layer (IAM & Signed URLs)
-* **Role:** Multi-layered security and data protection.
-* **Service Accounts:** Cloud Run executes under a restricted **IAM (Identity and Access Management)** service account bound explicitly to the `roles/storage.objectAdmin` role, adhering strictly to the principle of least privilege.
 
 
 ---
