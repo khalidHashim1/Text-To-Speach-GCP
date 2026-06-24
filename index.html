@@ -366,7 +366,7 @@
             statusMessage.textContent = "Sending your text securely to Google Cloud…";
         
             try {
-                const response = await fetch("https://us-central1-my-first-project-khalid.cloudfunctions.net/tts-function", {
+                const response = await fetch("/api/tts-function", {
                     method: "POST",
                     headers: { "Content-Type": "application/json" },
                     body: JSON.stringify({ text })
