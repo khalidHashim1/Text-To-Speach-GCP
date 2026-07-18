@@ -2,7 +2,10 @@
 
 This project implements a fully serverless, asynchronous microservice backend built on **Google Cloud Platform (GCP)**. It exposes a secure, CORS-enabled REST API endpoint that accepts raw text input, converts it into high-fidelity synthetic audio, saves the output persistently, and returns a secure, time-limited download URL to the client.
 
----
+--
+
+Live site: https://bootcamp.khalidhashim.com/index.html
+
 
 ## 🏗️ Architectural Components
 
